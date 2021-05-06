@@ -22,7 +22,7 @@ const Cart = () => {
     useEffect(() => {
         loadProducts(`https://raw.githubusercontent.com/kallebenunes/data/main/${path}.json`)
         document.title = `Carrinho`
-    }, [])
+    }, [path])
 
     return (
 
