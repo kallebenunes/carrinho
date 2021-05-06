@@ -15,14 +15,13 @@ const Cart = () => {
         let {items, value} = res
         setProducts(items)
         setTotalProducts(value)
-        console.log(items);
-        console.log(formatCurrency(565))
         setLoading(false)
         
     }
     
     useEffect(() => {
         loadProducts(`https://raw.githubusercontent.com/kallebenunes/data/main/${path}.json`)
+        document.title = `Carrinho`
     }, [])
 
     return (
@@ -43,7 +42,7 @@ const Cart = () => {
                <ul>
                    {products.map(product => {
                       return (
-                           <li key={product.uniqueID} className='product-card'>
+                           <li key={product.uniqueId} className='product-card'>
                                <div className='product-image'>
                                    <img src={product.imageUrl} alt={product.name} />
                               </div>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 const Container  = styled.div`
-    width: 100%; 
     max-width: 720px;
+    width: 100%;
     margin: 4rem auto;
     background: #fff;
     border-radius: 25px;
@@ -20,9 +20,11 @@ const Container  = styled.div`
         .product-card {
             display: flex;
             margin: 2rem 0;
+            flex-wrap: wrap;
         }
 
         .product-image{
+            flex-basis: 150px;
             display: flex; 
             justify-content: center;
             width: 150px;
@@ -40,6 +42,7 @@ const Container  = styled.div`
         }
         .product-name {
             margin: .5rem 0;
+            flex: 1;
         }
 
 
@@ -123,6 +126,21 @@ const Container  = styled.div`
             to {
                 top: 25px;  
             }
+        }
+    }
+
+    @media (max-width:723px){
+        margin: 2rem;
+        width: initial;
+    }
+
+    @media (max-width:594px){
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
     }
 
