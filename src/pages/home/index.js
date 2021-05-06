@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Container from './style'
 const Home = () => {
-    document.title = 'Home'
+    useEffect(()=>{
+        document.title = 'Home'
+    },[])
     return (
         <Container>
             <Link to='/carrinho/bigger-ten'> Maior que 10 </Link>
