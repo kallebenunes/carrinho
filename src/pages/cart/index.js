@@ -48,7 +48,7 @@ const Cart = () => {
                                    <img src={product.imageUrl} alt={product.name} />
                               </div>
                               <div className='product-description'>
-                                  <h4 className='product-name'>{capitalizeFirstLetter(product.name)}</h4>
+                                  <h3 className='product-name'>{capitalizeFirstLetter(product.name)}</h3>
                                   <p className='biggest-price'>{formatCurrency(product.price)}</p>
                                   <p className='lowest-price'>{formatCurrency(product.sellingPrice)}</p>
                               </div>
