@@ -1,2 +1,2 @@
-# Repositório do Processo Seletivo da Codeby
+# Carrinho parcial
 
